@@ -3,6 +3,41 @@
 <head>
   <meta charset="UTF-8">
   <title>Hello World</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+    }
+    body {
+      background: #000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      min-height: 100vh;
+    }
+    h1 {
+      font-size: 8vw;
+      margin: 0;
+      text-align: center;
+      /* 七彩字體動畫 */
+      background: linear-gradient(270deg, #ff0000, #ff9900, #ffff00, #33ff00, #00ffff, #0066ff, #cc00ff, #ff0000);
+      background-size: 1600% 1600%;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      animation: rainbow 6s linear infinite;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+    }
+    @keyframes rainbow {
+      0% {background-position: 0% 50%;}
+      50% {background-position: 100% 50%;}
+      100% {background-position: 0% 50%;}
+    }
+  </style>
 </head>
 <body>
   <h1>Hello World</h1>
