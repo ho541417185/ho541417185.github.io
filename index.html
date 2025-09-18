@@ -21,17 +21,34 @@
     }
     button {
       font-size: 2vw;
-      padding: 12px 32px;
+      padding: 18px 48px;
       border: none;
-      border-radius: 8px;
+      border-radius: 10px;
       background: #222;
-      color: #fff; /* 這裡設定按鈕文字為白色 */
+      color: #fff;
       cursor: pointer;
-      transition: background 0.2s;
       margin-bottom: 24px;
+      box-shadow:
+        0 4px #888,
+        0 1px 8px #2227;
+      font-family: 'Segoe UI', 'Arial', 'sans-serif';
+      font-weight: bold;
+      outline: none;
+      transition: 
+        background 0.15s, 
+        box-shadow 0.1s, 
+        transform 0.1s;
+      letter-spacing: 0.1em;
+      position: relative;
+      top: 0;
     }
-    button:hover {
-      background: #444;
+    button:active {
+      background: #333;
+      box-shadow:
+        0 2px #444,
+        0 1px 4px #2227;
+      transform: translateY(2px);
+      top: 2px;
     }
     h1 {
       font-size: 8vw;
