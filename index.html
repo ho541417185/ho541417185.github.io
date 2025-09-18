@@ -13,6 +13,7 @@
     body {
       background: #000;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
       height: 100vh;
@@ -20,26 +21,33 @@
     }
     h1 {
       font-size: 8vw;
-      margin: 0;
+      margin: 32px 0 0 0;
       text-align: center;
-      /* 七彩字體動畫 */
-      background: linear-gradient(270deg, #ff0000, #ff9900, #ffff00, #33ff00, #00ffff, #0066ff, #cc00ff, #ff0000);
-      background-size: 1600% 1600%;
+      font-weight: bold;
+      letter-spacing: 0.05em;
+      background: linear-gradient(90deg, red, orange, yellow, green, blue, indigo, violet);
       color: transparent;
       -webkit-background-clip: text;
       background-clip: text;
-      animation: rainbow 6s linear infinite;
-      font-weight: bold;
-      letter-spacing: 0.05em;
     }
-    @keyframes rainbow {
-      0% {background-position: 0% 50%;}
-      50% {background-position: 100% 50%;}
-      100% {background-position: 0% 50%;}
+    button {
+      font-size: 2vw;
+      padding: 12px 32px;
+      border: none;
+      border-radius: 8px;
+      background: #222;
+      color: #fff;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-bottom: 24px;
+    }
+    button:hover {
+      background: #444;
     }
   </style>
 </head>
 <body>
+  <button onclick="location.href='index2.html'">進入 index2.html</button>
   <h1>Hello World</h1>
 </body>
 </html>
